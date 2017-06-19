@@ -1,0 +1,197 @@
+*, html {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #d5f0f2;
+  font-family: 'LATO', sans-serif;
+  font-size: 18px;
+  color: #2d3c49;
+}
+
+header {
+  display: flex;
+  margin: 10px auto 20px auto;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #a8845d;
+}
+
+footer {
+  max-width: 100%;
+  height: 60px;
+  background-color: #92cdf3;
+  text-align: center;
+}
+
+footer p {
+  padding-top: 20px;
+}
+
+.content {
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+}
+
+.logo {
+  width: 40%;
+  margin-top: 20px;
+}
+
+.logo img {
+  width: 90px;
+  height: 90px;
+}
+
+.name {
+  width: 60%;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.name h1 {
+  font-weight: 300;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  transition: font-size 1s;
+}
+
+.name h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.5em;
+  transition: font-size 1s;
+}
+
+.main_pic {
+  background-image: url(../images/RPO-35_medium.jpg);
+  border-radius: 3px;
+  margin-top: 20px;
+  width: 100%;
+  transition: background-image 0.1s;
+}
+
+.photo {
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
+
+.content-area {
+  margin-bottom: 40px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.content-data h2 {
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #9698a5;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: justify-content 0.5s;
+  margin: 0 20px 0 0;
+  width: 100%;
+  text-align: center;
+}
+
+.articles h2 {
+  color: #2d3c49;
+}
+
+.content-data p{
+  color: #2d3c49;
+  font-size: 0.7em;
+}
+
+.pic {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top: 10px;
+  max-height: 100%;
+  /*max-height: 305px;*/
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.pic img {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  max-width: 100%;
+}
+
+.pic a {
+  text-decoration: none;
+  color: #2d3c49;
+}
+
+.pic p {
+  max-width: 460px;
+  text-align: center;
+  padding: 0 5px 5px 5px;
+
+}
+
+@media screen and (min-width: 377px) {
+
+  .name h1 {
+    font-size: 1.7em;
+  }
+
+  .name h3 {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (min-width: 667px) {
+
+  .pic {
+    margin-right: 5px;
+  }
+
+  .pic p {
+    max-width: 320px;
+    text-align: center;
+    padding: 0 5px 5px 5px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+
+  .content {
+    margin: 10px auto 0 auto;
+    width: 80%;
+  }
+
+  .articles {
+    justify-content: space-around;
+  }
+
+  .name h1 {
+    font-size: 2em;
+  }
+
+  .name h3 {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 785px) {
+
+  .main_pic {
+    background-image: url(../images/RPO-35.jpg);
+  }
+}
